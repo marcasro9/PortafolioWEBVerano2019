@@ -1,0 +1,15 @@
+.navegador {
+    text-align: center;
+    width: 290px;
+    height: 800px;
+    float: left;
+    border-style: double;
+    background-color: antiquewhite;
+    flex: auto;
+}
+
+.buttonNavegador {
+    margin-top: 10px;
+    width: 200px;
+    height: 100px;
+}

@@ -1,0 +1,9 @@
+.general {
+    text-align: center;
+    width: 900px;
+    height: 800px;
+    border-style: double;
+    background-color: burlywood;
+    float: left;
+    flex: auto;
+}

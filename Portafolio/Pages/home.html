@@ -4,38 +4,50 @@
 <head>
     <title>Home</title>
     <meta charset="UTF-8">
-    <style>
-        .general {
-            margin: auto;
-            margin-top: 50px;
-            text-align: center;
-            width: 960px;
-            height: 800px;
-        }
-
-        .button {
-            margin-top: 50px;
-            width: 200px;
-            height: 100px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="../syles/general.css">
+    <link rel="stylesheet" type="text/css" href="../syles/navegador.css">
+    <link rel="stylesheet" type="text/css" href="../syles/container.css">
+    <link rel="stylesheet" type="text/css" href="../syles/informacion.css">
 </head>
 
 <body>
 
-    <div class="general">
-        <h1>Portafolio</h1>
-        <button class="button" type="button" onclick="location.href='tareas.html'">Tareas</button>
-        <button class="button" type="button" onclick="location.href='laboratorios.html'">Laboratorios</button>
+    <div class="container">
+        <div class="navegador">
+            <h1>Evaluaciones</h1>
+            <button class="buttonNavegador" type="button" onclick="location.href='tareas.html'">Tareas</button>
+            <button class="buttonNavegador" type="button" onclick="location.href='tareas.html'">Proyectos</button>
+            <button class="buttonNavegador" type="button" onclick="location.href='tareas.html'">Investigaciones</button>
+            <button class="buttonNavegador" type="button"
+                onclick="location.href='laboratorios.html'">Laboratorios</button>
+        </div>
+
+        <div class="general">
+            <h1>
+                IC8057 Introducción al desarrollo de páginas WEB.
+            </h1>
+            <h1>
+                Verano 2019
+            </h1>
+            <h1>
+                ERICKA SOLANO FERNANDEZ
+            </h1>
+            <img src="../images/html.jpg" alt="HTML" height="600" width="800">
+
+        </div>
+
+        <div class="informacion">
+            <h1>Información</h1>
+            <button class="buttonNavegador" type="button"
+                onclick="location.href='informacionEstudiante.html'">Estudiante</button>
+        </div>
+
     </div>
 
-
 </body>
+
 <footer>
-    <p>&copy; 2019 Instituto Tecnológico de Costa Rica</p>
-    <ul>
-        <li><a href="acercaDe.html">Acerca de</a></li>
-    </ul>
+    <p align="center">&copy; 2019 Instituto Tecnológico de Costa Rica</p>
 </footer>
 
 </html>
