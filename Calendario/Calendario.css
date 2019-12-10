@@ -1,0 +1,54 @@
+.container{
+    margin: auto;
+    text-align: center;
+    width: 60%;
+    height: 100%;
+    border-style: double;
+    background-color: aqua;
+}
+
+.area1{
+    margin: auto;
+    height: 80px;
+    border-style: double;
+    background-color: antiquewhite;
+}
+
+.area1div{
+    margin: auto;
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 100px;
+    height: 20px;
+    border-style: double;
+    float: left;
+}
+.area1h2{
+    margin: auto;
+    margin-left: 50px;
+    width: 100px;
+    height: 80px;
+    float: left;
+}
+
+.area2{
+    margin: auto;
+    width: 100%;
+    height: 60px;
+    border-style: double;
+    background-color: antiquewhite;
+}
+
+.area3{
+    margin: auto;
+    height: 20px;
+    border-style: double;
+    background-color: antiquewhite;
+}
+.area4{
+    margin: auto;
+    height: 50px;
+    border-style: double;
+    background-color: aqua;
+}
+
