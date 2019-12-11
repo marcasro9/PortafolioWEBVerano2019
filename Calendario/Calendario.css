@@ -8,8 +8,7 @@
 }
 
 .area1{
-    margin: auto;
-    height: 80px;
+    height: 95px;
     border-style: double;
     background-color: antiquewhite;
 }
@@ -17,17 +16,18 @@
 .area1div{
     margin: auto;
     margin-top: 30px;
-    margin-left: 50px;
+    margin-left: 140px;
+    margin-right: 140px;
     width: 100px;
     height: 20px;
     border-style: double;
     float: left;
 }
 .area1h2{
-    margin: auto;
-    margin-left: 50px;
-    width: 100px;
-    height: 80px;
+    margin-top: 10px;
+    width: 120px;
+    height: 60px;
+    border-style: double;
     float: left;
 }
 
