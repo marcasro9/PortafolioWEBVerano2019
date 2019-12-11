@@ -9,7 +9,8 @@ diassemana = ["lun", "mar", "mié", "jue", "vie", "sáb", "dom"];
 window.onload = function () {
     //fecha actual
 
-    hoy = new Date(); //objeto fecha actual
+    hoy = new this.Date(); //objeto fecha actual
+
     diasemhoy = hoy.getDay(); //día semana actual
     diahoy = hoy.getDate(); //día mes actual
     meshoy = hoy.getMonth(); //mes actual
@@ -43,17 +44,21 @@ function cabecera() {
     tit.innerHTML = meses[mescal] + " de " + annocal;
     mesant = mescal - 1; //mes anterior
     mespos = mescal + 1; //mes posterior
-    if (mesant < 0) { mesant = 11; }
-    if (mespos > 11) { mespos = 0; }
+    if (mesant < 0) {
+        mesant = 11;
+    }
+    if (mespos > 11) {
+        mespos = 0;
+    }
     ant.innerHTML = meses[mesant]
     pos.innerHTML = meses[mespos]
 }
 
 //primera línea de tabla: días de la semana.
 function primeralinea() {
-    for (i = 0; i < 7; i++) {
+    for (let i = 0; i < 7; i++) {
         celda0 = f0.getElementsByTagName("th")[i];
-        celda0.innerHTML = diassemana[i]
+        celda0.innerHTML = diassemana[i];
     }
 }
 
@@ -62,7 +67,9 @@ function escribirdias() {
     primeromes = new Date(annocal, mescal, "1") //buscar primer día del mes
     prsem = primeromes.getDay() //buscar día de la semana del día 1
     prsem--; //adaptar al calendario español (empezar por lunes)
-    if (prsem == -1) { prsem = 6; }
+    if (prsem == -1) {
+        prsem = 6;
+    }
     //buscar fecha para primera celda:
     diaprmes = primeromes.getDate()
     prcelda = diaprmes - prsem; //restar días que sobran de la semana
@@ -70,13 +77,13 @@ function escribirdias() {
     diames = new Date() //convertir en fecha
     diames.setTime(empezar); //diames=fecha primera celda.
     //Recorrer las celdas para escribir el día:
-    for (i = 1; i < 7; i++) { //localizar fila
+    for (let i = 1; i < 7; i++) {
         fila = document.getElementById("fila" + i);
-        for (j = 0; j < 7; j++) {
+        for (let j = 0; j < 7; j++) {
             midia = diames.getDate()
             mimes = diames.getMonth()
             mianno = diames.getFullYear()
-            celda = fila.getElementsByTagName("td")[j];
+            celda = fila.getElementsByTagName("td")[j]
             celda.innerHTML = midia;
             //Recuperar estado inicial al cambiar de mes:
             celda.style.backgroundColor = "#9bf5ff";
@@ -90,7 +97,7 @@ function escribirdias() {
                 celda.style.color = "#a0babc";
             }
             //destacar la fecha actual
-            if (mimes = meshoy && midia == diahoy && mianno == annohoy) {
+            if (mimes == meshoy && midia == diahoy && mianno == annohoy) {
                 celda.style.backgroundColor = "#f0b19e";
                 celda.innerHTML = "<cite title='Fecha Actual'>" + midia + "</cite>";
             }
