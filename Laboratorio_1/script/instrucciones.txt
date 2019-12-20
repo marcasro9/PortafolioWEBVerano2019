@@ -16,7 +16,7 @@ CREATE TABLE users (
 );
 
 #Posteriormente en la carpeta de xampp/htdocs descomprimir el archivo adjunto.
-#Luego de descomprimir el archivo, utilizar un navegador y escribir en la barra de busqueda http://localhost/Laboratorio/login.php.
+#Luego de descomprimir el archivo, utilizar un navegador y escribir en la barra de busqueda http://localhost/Laboratorio_1/login.php.
 #Listo, solo quedaria probar lo solicitado por el laboratorio. :D
 
 #Observaciones
