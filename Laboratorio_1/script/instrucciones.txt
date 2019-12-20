@@ -1,0 +1,24 @@
+#Antes de probar el laboratorio, se necesita que el programa XAMPP este corriendo en la maquina, pues se necesitan los servicios de Apache y MySQL.
+
+#Crear la base de datos user en localhost/phpmyadmin
+
+CREATE TABLE users (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    email VARCHAR(100) NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    lastname VARCHAR(100) NOT NULL,
+    lastname2 VARCHAR(100) NOT NULL,
+    number VARCHAR(255) NOT NULL,
+    date DATE NOT NULL
+);
+
+#Posteriormente en la carpeta de xampp/htdocs descomprimir el archivo adjunto.
+#Luego de descomprimir el archivo, utilizar un navegador y escribir en la barra de busqueda http://localhost/Laboratorio/login.php.
+#Listo, solo quedaria probar lo solicitado por el laboratorio. :D
+
+#Observaciones
+#Puede ocurrir que no encuentre el servidor, en caso de eso ir al archivo config.php y cambiar los parametros, esto debido a que esos son los parametros utilizados a la hora
+#de ingresar al servidor
