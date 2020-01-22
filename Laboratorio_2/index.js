@@ -53,27 +53,6 @@ listaRutas.forEach(direcc => {
 L.Routing.control({
     waypoints: direcciones
 }).addTo(mymap);
-//L.Routing.control({
-//  waypoints: [
-//      L.latLng(9.864687, -83.915012),//Compubetel
-//      L.latLng(9.863826, -83.924817)//Extremetech
-//  ]
-//}).addTo(mymap);
-
-//Puntos
-//var marker = L.marker([9.864687, -83.915012]).addTo(mymap).bindPopup("<b>Compubetel!</b><br>Soy Compubetel.");
-//var marker = L.marker([9.863826, -83.924817]).addTo(mymap).bindPopup("<b>Extremetech!</b><br>Soy Extremetech.");
-//var marker = L.marker([9.867463, -83.930703]).addTo(mymap).bindPopup("<b>Intelec!</b><br>Soy Intelec.");
-//var marker = L.marker([9.865359, -83.923612]).addTo(mymap).bindPopup("<b>Laptop Center!</b><br>Soy Laptop Center.");
-//var marker = L.marker([9.863331, -83.921193]).addTo(mymap).bindPopup("<b>Zona Gamer!</b><br>Soy Zona Gamer.");
-//var marker = L.marker([9.863499, -83.917341]).addTo(mymap).bindPopup("<b>JC Support!</b><br>Soy JC Support.");
-
-//L.Routing.control({
-//   waypoints: [
-//       L.latLng(9.864687, -83.915012),//Compubetel
-//       L.latLng(9.863826, -83.924817)//Extremetech
-//   ]
-//}).addTo(mymap);
 
 
 var popup = L.popup();
